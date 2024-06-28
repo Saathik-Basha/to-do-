@@ -1,0 +1,129 @@
+.ancestorContainer {
+    display: flex;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 8px;
+    height: 80vh;
+    margin: 6px;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 4px;
+}
+
+.addButton {
+    height: fit-content;
+    width: fit-content;
+    padding: 12px 8px;
+    background-color: floralwhite;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: large;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+}
+
+.addButton:hover {
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.4);
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    background-color: rgb(0, 0, 0);
+    margin: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    gap: 12px;
+    overflow-y: auto;
+}
+
+.todo {
+    background-color: white;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.todoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    font-size: large;
+    word-wrap: break-word;
+}
+
+.todoTitle {
+    flex-grow: 1;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.todoDescription {
+    font-size: medium;
+    color: grey;
+    margin-top: 4px;
+}
+
+.todoActions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    height: 20px;
+    width: 20px;
+}
+
+.todoInput {
+    width: 250px;
+    margin-right: 8px;
+    height: 45px;
+    font-size: large;
+}
+
+.noTodoMessage {
+    color: white;
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+}
+
+.editButton {
+    padding: 8px;
+    background-color: floralwhite;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: 700;
+    transition: all 0.3s linear;
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.1);
+}
+
+.editButton:hover {
+    box-shadow: 1px 1px 4px 2px rgb(0, 0, 0, 0.4);
+}
+
+.deleteText {
+    color: red;
+    cursor: pointer;
+}
